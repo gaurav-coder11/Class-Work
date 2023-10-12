@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="online-registration.png"/>
+    <title>Registration Form</title>
+    <style>
+        /* Set background image and styling */
+        body {
+            background-image: url('reg.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+         /* Center-align and set text color */
+        h1 {
+            text-align: center;
+            color: #ffffff; 
+        }
+        /* Styling for the registration form */
+        form {
+            background-color: rgba(206, 243, 237, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+        /* Styling for the image */
+        img {
+            width: 70px;
+            height: 70px;
+            border: 20px;
+        }
+        /* Styling for buttons */
+        .btn {
+            padding: 10px 20px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .btn:hover {
+            background-color: #3e8e41
+        }
+
+        .btn:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        </style>
+</head>
+<body>
+    <center><img src="online-registration.png" alt="online-registration-image"> </center>
+    <h1>Registration Form</h1>
+    <form action="calender.html" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <input type="radio" id="other" name="gender" value="other"> Other<br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="usa">Bharat</option>
+            <option value="canada">Pakistran</option>
+            <option value="uk">UK</option>
+            <option value="india">USA</option>
+            
+        </select><br><br>
+        <label for="state">States:</label>
+        <select id="state" name="state" required>
+            <option value="mh">Maharastra</option>
+            <option value="gj">Gujrat</option>
+            <option value="pn">Panjab</option>
+            <option value="hy">Hybrabad</option>
+            <option value="di">Delli</option>
+            <option value="mp">MP</option>
+            <option value="br">Bihar</option>
+            <option value="rj">Rajasthan</option>
+            
+        </select><br><br>
+
+        <label for="agree_terms">I agree to the terms and conditions:</label>
+        <input type="checkbox" id="agree_terms" name="agree_terms" required><br><br>
+        <!-- Submit button -->
+     <center> <input type="submit" value="Register" class="btn"></center>
+    </form>
+</body>
+</html>

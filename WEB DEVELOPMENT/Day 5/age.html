@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head><Title>Person Eligibility</Title>
+    <style>
+        /* CSS styles for the page background */
+    body {
+        background-image: url('line.png'); /* Replace 'background.jpg' with the path to your image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    /* Center-align and set text color */
+    h2 {
+            text-align: center;
+            color: #faab19ef; 
+        }
+    /* CSS styles for the form */
+    form {
+            background-color: rgba(255, 255, 255, 0.8); /*  background for the form */
+            padding: 20px;
+            border-radius: 20px;
+            margin: 10 auto;
+            max-width: 400px;
+        }
+        /* Styling for the image */
+        img {
+            width: 150px;
+            height: 150px;
+            border: 20px;
+        }
+        /* Styling for buttons */
+        .btn {
+            background-color: initial;
+            background-image: linear-gradient(-180deg, #00D775, #00BD68);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+            height: 44px;
+            line-height: 44px;
+            outline: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            pointer-events: auto;
+            position: relative;
+            text-align: center;
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: top;
+            white-space: nowrap;
+            width: 100%;
+            z-index: 9;
+            border: 0;
+        }
+
+        .btn:hover {
+            background: #00bd68;
+        }
+        
+</style>
+</head>
+<body bgcolor="pink"> <!-- Pink background for the body -->
+    <center>
+        <form>
+            <img src="voteeligible.jpg" alt="vote eligibility">
+        <h2>Can You Eligible To Vote</h2>
+        <h2>Check It Now</h2></br>
+        <!-- Input field for entering name -->
+        Enter Your Name: <input type="text" id="name" placeholder="Enter your Name">
+        <br></br>
+        <!-- Input field for entering age -->
+        Enter Your Age: <input type="text" id="age" placeholder="Enter your age">
+        <br></br>
+        <!-- Button to check eligibility -->
+        <button class="btn"  id="btn" onclick="vote()">Check Eligibility</button>
+        </form>
+    </center>
+    <script>
+        function vote() {
+            // Get the value entered in the "name" input field
+            var name = document.getElementById("name").value;
+            // Get the value entered in the "age" input field and convert it to a number
+            var age = parseInt(document.getElementById("age").value);
+            // Check if either name or age is missing or not a valid number
+            if (!name || isNaN(age)) {
+                 // Display an alert for missing name/age
+                alert("Oops... You have not entered Name/Age.");
+            } else if (age >= 18) {
+                // Display an alert for eligibility to vote
+                alert(name + ", you are eligible to vote!");
+            } else {
+                // Display an alert for not being eligible to vote
+                alert(name + ", you are not eligible to vote.");
+            }
+        }
+    </script>
+    </body>
+    </html>

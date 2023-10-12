@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Calender</title>
+	</head>
+<body>
+	<script>
+		function msg(){
+			alert("Hello! this is message");
+		}
+		function greet(){
+			document.write("Good Morning");
+		}
+
+		document.write("Enter a number 1 to 7");
+		document.write("<br>");
+		let a = parseInt(prompt("Enter a number"));
+
+	switch(a){
+		case 1:
+			document.write("Sunday");
+			break;
+
+		case 2:
+			document.write("Monday");
+			break;
+
+		case 3:
+			document.write("Tuesday");
+			break;
+
+		case 4:
+			document.write("Wednesday");
+			break;
+
+		case 5:
+			document.write("Thrusday");
+			break;
+
+		case 6:
+			document.write("Friday");
+			break;
+	
+		case 7:
+			document.write("Saturday");
+			break;
+	
+			default:
+				document.write("Envalid inpute!");
+				break;
+
+		}
+	</script>
+	<input type="button" onclick="msg()" value="call finction"/>
+	<button onclick="greet()">click</button>
+</body>
+</html>
